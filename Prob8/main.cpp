@@ -1,4 +1,4 @@
-#include <iostream>
+#include <stdio.h>
 
 using namespace std;
 
@@ -15,11 +15,15 @@ int main()
         i=0;
         while(x>0){
             if(x>Vn[i]){
+                printf("%s",Vc[i]);
+                x=x-Vn[i];
 
-            }
+            }else
+                i++;
         }
+        printf("\n");
     }
 
 
-        return 0;
+    return 0;
 }
